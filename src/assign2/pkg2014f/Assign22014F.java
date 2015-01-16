@@ -8,7 +8,7 @@ package assign2.pkg2014f;
 import java.util.Scanner;
 
 /**
- * @author <ENTER YOUR NAME HERE>
+ * @author <Jay Joshi>
  */
 public class Assign22014F {
 
@@ -66,7 +66,14 @@ public class Assign22014F {
      */
     public static void doExercise4() {
         // TODO: Complete Exercise #4 Below
-
+        
+        System.out.println("   *  ");
+        System.out.println("  *** ");
+        System.out.println(" ***** ");
+        System.out.println("******* ");
+        System.out.println(" ***** ");
+        System.out.println("  ***  ");
+        System.out.println("   *   ");
     }
 
     /* Exercise #9
@@ -83,6 +90,18 @@ public class Assign22014F {
     public static void doExercise9() {
         // TODO: Complete Exercise #9 Below
 
+        Scanner miles = new Scanner(System.in);
+        
+        System.out.println("Enter Miles Driven: ");
+        double MilesDriven = miles.nextDouble();
+        
+        System.out.println("Enter Gallons Of Gas Used: ");
+        double GallonsofGasUsed = miles.nextDouble();
+        
+        double MPG = MilesDriven / GallonsofGasUsed;
+        
+        System.out.println("car's miles-per-gallons are: " + MPG);
+            
     }
 
     /* Exercise #10
@@ -94,7 +113,21 @@ public class Assign22014F {
      */
     public static void doExercise10() {
         // TODO: Complete Exercise #10 Below
-
+        
+        System.out.println("Enter three test scores: ");
+        Scanner score = new Scanner(System.in);
+        
+        double score1 = score.nextDouble();
+        double score2 = score.nextDouble();
+        double score3 = score.nextDouble();
+        
+        System.out.println("First Test Score is: " + score1 + 
+                "\nSecond Test Score is: " + score2 + 
+                "\nThird Test Score is: " + score3 );
+        
+        Double avg = (score1 + score2 + score3)/3;
+        
+        System.out.println("Average of scores is: " + avg);
     }
 
     /* Exercise #12
@@ -111,7 +144,18 @@ public class Assign22014F {
      */
     public static void doExercise12() {
         // TODO: Complete Exercise #12 Below
+        
+        System.out.println("Enter Name your Favourite City: ");
+        
+        Scanner city = new Scanner(System.in);
+        String cityName = city.nextLine();
 
+        
+        System.out.println("The number of charaters in city name is: " + cityName.length() );
+        System.out.println("The name of the city in uppercase letters is: " + cityName.toUpperCase());
+        System.out.println("The name of the city in lowercase letters is: " + cityName.toLowerCase());
+        System.out.println("The First Character in the name of city is: " + cityName.charAt(0));
+        
     }
 
     /* Exercise #16
@@ -138,6 +182,36 @@ public class Assign22014F {
      */
     public static void doExercise16() {
         // TODO: Complete Exercise #16 Below
-
+        
+        Scanner details = new Scanner(System.in);
+        
+        System.out.println("Enter your Name: ");
+        String name = details.nextLine();
+        
+        System.out.println("Enter your Age: ");
+        int age = details.nextInt();
+        
+        details.nextLine();
+        System.out.println("Enter your city: ");
+        String city = details.nextLine();
+        
+        System.out.println("Enter your college: ");
+        String college = details.nextLine();
+        
+        System.out.println("Enter your Profession: ");
+        String profession = details.nextLine();
+        
+        System.out.println("Enter Type of Animal: ");
+        String animal = details.nextLine();
+        
+        System.out.println("Enter Pet's Name: ");
+        String pet = details.nextLine();
+             
+        
+        
+        System.out.println("There once was a person named "+ name + " who lived in " + city +". At the age of "+ age +",\n"
+         + name  + " went to college at " + college + ". " + name + " graduated and went to work as a\n"
+         + profession  +". Then," + name + " adopted a(n) " + animal + " named " + pet+ ". They both\n" +
+        "lived happily ever after.");
     }
 }
